@@ -8,8 +8,7 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 export default () => {
     const store = createStore(
         combineReducers({
-           notes: notesReducer,
-           selectedNote: selectedNoteReducer
+           // Reducers
         }),
         composeEnhancers(applyMiddleware(thunk))
     );
